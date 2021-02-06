@@ -34,7 +34,6 @@ export default {
       name: 'bottledOn',
       title: 'Abgefüllt am',
       type: 'date',
-      validation: (Rule) => Rule.required(),
       options: {
         dateFormat: 'DD-MM-YYYY',
       },

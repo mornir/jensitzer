@@ -3,7 +3,7 @@ import { GiCubes } from 'react-icons/gi'
 export default {
   name: 'ingredient',
   title: 'Zutat',
-  type: 'document',
+  type: 'object',
   icon: GiCubes,
   fields: [
     {

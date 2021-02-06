@@ -98,7 +98,7 @@ export default {
     {
       title: 'Beer Number',
       name: 'beerNumber',
-      by: [{ field: 'number', direction: 'desc' }],
+      by: [{ field: 'number', direction: 'asc' }],
     },
   ],
 }

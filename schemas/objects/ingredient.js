@@ -18,4 +18,20 @@ export default {
       type: 'string',
     },
   ],
+  preview: {
+    select: {
+      name: 'name',
+      quantity: 'quantity',
+    },
+    prepare({ name, quantity }) {
+      if (quantity) {
+        return {
+          title: `${quantity} ${name}`,
+        }
+      }
+      return {
+        title: name,
+      }
+    },
+  },
 }

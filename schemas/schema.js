@@ -10,17 +10,14 @@ import hop from './documents/hop'
 import malt from './documents/malt'
 import yeast from './documents/yeast'
 
+// Import objects
+import ingredient from './objects/ingredient'
+
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
   // We name our schema
   name: 'default',
   // Then proceed to concatenate our document type
   // to the ones provided by any plugins that are installed
-  types: schemaTypes.concat([
-    beer,
-    hop,
-    yeast,
-    malt,
-    /* Your types here! */
-  ]),
+  types: schemaTypes.concat([hop, yeast, malt, ingredient, beer]),
 })

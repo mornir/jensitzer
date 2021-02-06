@@ -31,6 +31,15 @@ export default {
       validation: (Rule) => Rule.required().positive(),
     },
     {
+      name: 'bottledOn',
+      title: 'Abgefüllt am',
+      type: 'date',
+      validation: (Rule) => Rule.required(),
+      options: {
+        dateFormat: 'DD-MM-YYYY',
+      },
+    },
+    {
       name: 'malts',
       title: 'Malz',
       type: 'array',
@@ -67,13 +76,10 @@ export default {
       ],
     },
     {
-      name: 'bottledOn',
-      title: 'Abgefüllt am',
-      type: 'date',
-      validation: (Rule) => Rule.required(),
-      options: {
-        dateFormat: 'DD-MM-YYYY',
-      },
+      name: 'ingredients',
+      title: 'Andere Zutaten',
+      type: 'array',
+      of: [{ type: 'ingredient' }],
     },
   ],
   preview: {

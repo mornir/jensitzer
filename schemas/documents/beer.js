@@ -1,4 +1,4 @@
-import { GiBeerBottle } from 'react-icons/gi';
+import { GiBeerBottle } from 'react-icons/gi'
 
 export default {
   name: 'beer',
@@ -33,10 +33,8 @@ export default {
       of: [
         {
           type: 'reference',
-          to: [
-            { type: 'malt' },
-          ]
-        }
+          to: [{ type: 'malt' }],
+        },
       ],
     },
     {
@@ -46,10 +44,8 @@ export default {
       of: [
         {
           type: 'reference',
-          to: [
-            { type: 'hop' },
-          ]
-        }
+          to: [{ type: 'hop' }],
+        },
       ],
     },
     {
@@ -59,11 +55,17 @@ export default {
       of: [
         {
           type: 'reference',
-          to: [
-            { type: 'yeast' },
-          ]
-        }
+          to: [{ type: 'yeast' }],
+        },
       ],
+    },
+    {
+      name: 'bottledOn',
+      title: 'Abgefüllt am',
+      type: 'date',
+      options: {
+        dateFormat: 'DD-MM-YYYY',
+      },
     },
   ],
 }

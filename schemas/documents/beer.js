@@ -9,8 +9,8 @@ export default {
     {
       name: 'number',
       title: 'Nummer',
-      type: 'number',
-      validation: (Rule) => Rule.required().positive(),
+      type: 'string',
+      validation: (Rule) => Rule.required(),
     },
     {
       name: 'name',
